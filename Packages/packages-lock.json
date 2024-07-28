@@ -7,34 +7,6 @@
       "dependencies": {},
       "hash": "095d1c78b77f405b44c9ff4ae20c3a01f6d3cddc"
     },
-    "com.hecomi.unvencoder": {
-      "version": "https://github.com/hecomi/uNvEncoder.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "3568c3fa3a4f9880ff18da515281950a0d646ab9"
-    },
-    "com.hecomi.unvpipe": {
-      "version": "https://github.com/hecomi/uNvPipe.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "106bcc1a49d8ed573021e63bb07d1969b09880f3"
-    },
-    "com.hecomi.upacketdivision": {
-      "version": "https://github.com/hecomi/uPacketDivision.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "0c302e237b3d42f501aab1d3d0ea3ca049fea001"
-    },
-    "com.hecomi.uwindowcapture": {
-      "version": "https://github.com/hecomi/uWindowCapture.git#upm",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {},
-      "hash": "0412fe09e11d3720197707a935f8114cc2454639"
-    },
     "com.unity.burst": {
       "version": "1.8.2",
       "depth": 1,
@@ -388,6 +360,15 @@
         "com.unity.inputsystem": "1.4.4"
       },
       "url": "https://packages.unity.com"
+    },
+    "com.unity.xr.picoxr": {
+      "version": "file:PICO Unity Integration SDK 250",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {
+        "com.unity.xr.management": "4.0.0",
+        "com.unity.xr.interaction.toolkit": "2.0.0"
+      }
     },
     "com.veriorpies.parrelsync": {
       "version": "https://github.com/VeriorPies/ParrelSync.git?path=/ParrelSync",

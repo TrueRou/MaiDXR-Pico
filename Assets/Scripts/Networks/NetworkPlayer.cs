@@ -19,7 +19,7 @@ public class NetworkPlayer : NetworkBehaviour
 
     private void DisableClientInput()
     {
-        
+
         if (!IsOwner)
         {
             var clientXROrigin = GetComponent<XROrigin>();
@@ -33,18 +33,16 @@ public class NetworkPlayer : NetworkBehaviour
             var clientCamera = GetComponentInChildren<Camera>();
             var clientAudioListener = GetComponentInChildren<AudioListener>();
             var clientLIV = GetComponent<LIV.SDK.Unity.LIV>();
-            var clientWindowEncoder = GetComponent<WindowEncoder>();
             //var clientOVRManager = gameObject.transform.Find("OVRManager").gameObject;
 
             clientXROrigin.enabled = false;
             clientLocomotion.enabled = false;
-            clientCamera.enabled = false; 
+            clientCamera.enabled = false;
             clientAudioListener.enabled = false;
             clientMoveProvider.enabled = false;
             clientTurnProvider.enabled = false;
             clientHead.enabled = false;
             clientLIV.enabled = false;
-            clientWindowEncoder.enabled = false;
             foreach (var ray in clientRays)
             {
                 ray.RaySwitch = false;
@@ -70,7 +68,7 @@ public class NetworkPlayer : NetworkBehaviour
         {
             HeadRenderer.material = MaterialP1;
         }
-        else 
+        else
         {
             HeadRenderer.material = MaterialP2;
             float LH, LS, LV; float RH, RS, RV;
@@ -87,7 +85,7 @@ public class NetworkPlayer : NetworkBehaviour
     {
         if (IsHost)
         {
-            transform.position = new Vector3(Player1Position.x, transform.position.y, transform.position.z + Player1Position.y); 
+            transform.position = new Vector3(Player1Position.x, transform.position.y, transform.position.z + Player1Position.y);
         }
         else
         {
